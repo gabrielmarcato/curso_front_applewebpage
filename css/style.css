@@ -1,0 +1,346 @@
+:root {
+    --font-white:#fff;
+    --font-nav:#e0e0e0;
+    --font-nav-hover:#757575;
+    --font-link:#0070c9;
+    --font-link-hover:#014d8b;
+    --bg-default:#fafafa;
+    --bg-nav:#373737;
+    --bg-dark:#000;
+}
+.logo-iphonexr, .logo-iphonexs, .logo-tvplus, .logo-arcade, .logo-watch, .logo-music, 
+.img-ipad, .img-iphonexr, .img-iphonexs, .bg-arcade, .bg-dark, .bg-fone, .bg-ipad, 
+.bg-iphonedark, .bg-music, .bg-tvplus, .bg-watch, .headtext, .subtext {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.bg-tvplus > .links, .bg-tvplus > .links > a, .bg-tvplus > .links > a:hover, 
+.bg-iphonedark > .links, .bg-iphonedark > .links > a, .bg-iphonedark > .links > a:hover, 
+.bg-arcade > .links, .bg-arcade > .links > a, .bg-arcade > .links > a:hover, 
+.bg-arcade > .subtext, .bg-music > .links, .bg-music > .links > a, .bg-music > .links > a:hover,
+.bg-music > .subtext {
+    color: var(--font-white);
+    border-bottom-color: var(--font-white);
+}
+/****** MENU ******/
+.header{
+    height: 43px;
+    background: var(--bg-nav);
+    padding: 0 20px;
+    color: var(--font-white);
+}
+.menu{
+    text-align: center;
+    line-height: 40px;
+}
+.menu a{
+    color: var(--font-nav);
+    text-decoration: none;
+    padding: 0px 36px;
+    transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: var(--font-nav);
+}
+.show-menu-btn{
+    float: left;
+    margin-top: -30px;
+}
+.show-menu-btn i{
+    line-height: 100px;
+}
+.menu a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
+    color: var(--font-nav-hover);
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+input[type=text]{   
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background-color: var(--font-nav); 
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 25px 25px;
+    background-image: url(../img/lupa.png);
+    display: none;
+}
+[logo-apple] { text-align: center; line-height: 40px; display: none; }
+[logo-loja] { text-align: right; margin-top: -30px; display: none; }
+/****** MAIN ******/
+.headtext {
+    font-size: 44px;
+    line-height: 1.09091;
+    font-weight: 600;
+    letter-spacing: -.002em;
+    text-align: center;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.subtext {
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+    text-align: center;
+    padding-top: 15px;
+    max-width: 550px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.links {
+    font-size: 18px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+    margin-top: .6em;
+    text-align: center;
+    color: var(--font-link);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.links > a {color: var(--font-link); text-decoration: none; margin-left: 15px;}
+.links > a:hover { border-bottom: 2px solid var(--font-link);}
+.head-iphonexr {
+    background-color: var(--bg-default);
+    padding-top:80px; 
+    margin-bottom: 10px;
+}
+.head-iphonexs {
+    background-color: var(--bg-default);
+    padding-top:40px; 
+    margin-bottom: 10px;
+}
+.bg-dark-tv {
+    background-color: var(--bg-dark);
+    padding-top:50px;
+}
+.pd-top { padding-top: 65vh; }
+/****** LOGO ******/
+.logo-iphonexr {
+    width: 180px;
+    height: 29px;
+    background-size: 180px 29px;
+    background-image: url(../img/logoiphonexr.png);
+}
+.logo-iphonexs {
+    width: 180px;
+    height: 29px;
+    background-size: 180px 29px;
+    background-image: url(../img/logoiphonexs.png);
+}
+.logo-tvplus {
+    width: 120px;
+    height: 48px;
+    background-size: 120px 48px;
+    background-repeat: no-repeat;
+    background-image: url(../img/logotvplus.png);
+}
+.logo-arcade {
+    width: 180px;
+    height: 38px;
+    background-size: 180px 38px;
+    background-image: url(../img/logoarcade.png);
+}
+.logo-watch {
+    width: 180px;
+    height: 70px;
+    margin-top:30px;
+    background-size: 180px 70px;
+    background-repeat: no-repeat;
+    background-image: url(../img/logowatch.jpg);
+}
+.logo-music {
+    width: 180px;
+    height: 45px;
+    background-size: 120px 30px;
+    background-image: url(../img/logomusic.png);
+}
+/****** IMAGENS ******/
+.img-iphonexr {
+    width: 573px;
+    height: 337px;
+    background-size: 573px 337px;
+    background-repeat: no-repeat;
+    background-image: url(../img/iphones.jpg);
+}
+.img-iphonexs {
+    margin-top: 15px;
+    width: 716px;
+    height: 295px;
+    background-size: 716px 295px;
+    background-repeat: no-repeat;
+    background-image: url(../img/iphonexs.jpg);
+}
+.img-ipad {
+    width: 420px;
+    height: 300px;
+    margin-top: 70px;
+    background-size: 420px 300px;
+    background-repeat: no-repeat;
+    background-image: url(../img/bgipad.jpg);
+}
+/****** Backgrounds ******/
+.bg-tvplus {
+    width: 900px;
+    height: 500px;
+    background-size: 900px 500px;
+    color: var(--font-white);
+    background-image: url(../img/bgtvplus.jpg);
+}
+.bg-iphonedark {
+    width: 50%;
+    height: 580px;
+    background-image: url(../img/bgiphonedark.jpg);
+    color: var(--font-white);
+    float: left;
+}
+.bg-arcade {
+    padding-top: 30px;
+    width: 50%;
+    height: 580px;
+    background-image: url(../img/bgarcade.jpg);
+    float: right;
+}
+.bg-watch {
+    width: 50%;
+    height: 580px;
+    background-size: 1000px 450px;
+    background-color: var(--bg-default);
+    background-image: url(../img/bgwatch.jpg);
+    float: left;
+}
+.bg-ipad {
+    width: 50%;
+    height: 580px;
+    float: right;
+    background-color: var(--bg-default);
+}
+.bg-fone {
+    padding-top:30px;
+    width: 50%;
+    height: 580px;
+    background-size: 680px 360px;
+    background-image: url(../img/bgfone.jpg);
+    background-color: var(--bg-default);
+    float: left;
+    margin-bottom: 10px;
+}
+.bg-music {
+    padding-top:30px;
+    width: 50%;
+    height: 580px;   
+    background-image: url(../img/bgmusic.jpg);
+    float: right;
+    margin-bottom: 10px;
+}
+/****** FOOTER ******/
+[footer] {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 13px;
+    color: var(--font-nav-hover);
+}
+[head-footer] ul li {padding-top: 15px;}
+[nav-footer] {margin-bottom: 20px;}
+.list-footer {
+    width: 20%;
+    height: 48vh;
+    display: inline-block;
+    float: left;
+    letter-spacing: -.002em;
+    line-height: 2;
+    padding: 0 10px;
+}
+.list-footer ul li a {
+    text-decoration: none;
+    color: var(--font-nav-hover);
+}
+.list-footer ul li:nth-child(1) {
+    font-weight: 600;
+    color: #000;
+}
+[bottom-footer] {
+    float: left;
+    padding-bottom: 20px;}
+/****** MEDIAS ******/
+@media only screen and (max-width: 1125px) {
+    .menu a{padding: 0px 28px;}
+}
+@media only screen and (max-width: 1000px) {
+    .menu a{padding: 0px 20px;}
+    .pd-top { padding-top: 65vh; }
+    .list-footer { height: 58vh;}
+}
+@media only screen and (max-width: 880px) {
+    /*logo*/
+    .logo-tvplus {margin-top: -35px; background-size: auto; background-image: url(../img/logotvplus.png);}
+    .logo-watch {width: 180px; height: 70px; background-size: auto; background-position: center;}
+    .logo-arcade {width: 130px; height: 28px; background-size: 130px 28px; background-image: url(../img/logoarcade.png);}
+    .logo-music {width: 130px; height: 32px; background-size: 130px 32px; background-image: url(../img/logomusic.png);}
+    /*Imagens*/
+    .img-ipad {width: 330px; height: 300px; background-size: 330px 300px; margin-top: 15px; background-repeat: no-repeat; background-image: url(../img/bgipad.jpg);}
+    /*Backgrounds*/
+    .bg-tvplus {width: 100%; height: 385px; background-size: 600px 375px; background-position: center; background-image: url(../img/bgtvplus.jpg);}
+    .bg-iphonedark {width: 100%; height: 380px; margin: -15; background-size: 900px 420px; background-image: url(../img/bgiphonedark.jpg); float: right;}
+    .bg-arcade {width: 100%; height: 450px; background-size: 900px 450px; background-image: url(../img/bgarcade.jpg); float: right; margin: 0;}
+    .bg-watch {width: 100%; height: 550px; background-position: center; background-size: 1100px 520px;  background-image: url(../img/bgwatch.jpg); float: right;}
+    .bg-ipad {width: 100%; height: 450px; float: right; margin:0; background-color: var(--bg-default);}
+    .bg-fone {width: 100%; height: 580px; background-position: center; background-size: 900px 450px;  background-image: url(../img/bgfone.jpg); margin:0; float: left;}
+    .bg-music {width: 100%; height: 580px; background-position: center; background-image: url(../img/bgmusic.jpg); margin: 0; float: right;}
+    .pd-top { padding-top: 43vh; }
+    .bg-iphonedark > .subtext {font-size: 17px;}
+    .bg-iphonedark > .links {font-size: 16px;}
+    /*Menu*/
+    .show-menu-btn,.hide-menu-btn{display: block;}
+    .menu{position: fixed; width: 40%; height: 100vh; background: var(--bg-nav); left: -100%; top: 0; text-align: left; padding: 80px 40px; line-height: normal; transition: 0.7s;}
+    .menu a{display: block; padding: 15px;}
+    .underline {border-bottom: 1px solid var(--font-nav);}
+    .hide-menu-btn{position: absolute; top: 40px; right: 40px;}
+    #chk:checked ~ .menu{left: 0;}
+    .menu a:nth-child(1), .menu a:nth-child(11), .menu a:nth-child(10) {display: none;}
+    input[type=text] { display: inline; }
+    [logo-apple] { display: block; }
+    [logo-loja] { display: block; }
+    .list-footer {height: 62vh;}
+}
+@media only screen and (max-width: 768px) {
+    .subtext {padding: 20px; font-size: 15px; margin-top: -15px;}
+    .links {font-size: 15px; margin-top: -10px;}
+    /*logo*/
+    .logo-tvplus {margin-top: -35px; background-size: auto; background-position: center; background-image: url(../img/logotvplus.png);}
+    .logo-watch {width: 180px; height: 70px; background-size: auto; background-position: center;}
+    .logo-arcade {width: 130px; height: 28px; background-size: 130px 28px; background-image: url(../img/logoarcade.png);}
+    .logo-music {width: 130px; height: 32px; background-size: 130px 32px; background-image: url(../img/logomusic.png);}
+    /*Imagens*/
+    .img-ipad {width: 330px; height: 300px; background-size: 330px 300px; margin-top: 15px; background-repeat: no-repeat; background-image: url(../img/bgipad.jpg);}
+    .img-iphonexr {margin-top: 30px; width: 280px; height: 360px; background-size: auto; background-image: url(../img/iphonesresponsive.jpg);}
+    .img-iphonexs {margin-top: 15px; width: 295px; height: 295px; background-size: auto; background-image: url(../img/iphonexsresponsive.jpg);}
+    /*Backgrounds*/
+    .bg-tvplus {width: 100%; height: 275px; background-size: 400px 255px; background-position: center; background-image: url(../img/bgtvplus.jpg);}
+    .bg-iphonedark {width: 100%; height: 380px; background-size: auto 360px; margin: -15; background-image: url(../img/bgiphonedark.jpg); float: right;}
+    .bg-arcade {width: 100%; height: 450px; background-size: 900px 450px; background-image: url(../img/bgarcade.jpg); float: right; margin: 0;}
+    .bg-watch {width: 100%; height: 420px; background-position: center; background-size: 800px 360px; background-color: var(--bg-default);  background-image: url(../img/bgwatch.jpg); float: right;}
+    .bg-ipad { width: 100%; height: 450px; float: right; margin:0; background-color: var(--bg-default); }
+    .bg-fone { width: 100%; height: 520px; background-position: center; background-size: 900px 450px;  background-image: url(../img/bgfone.jpg); margin:0; float: left;}
+    .bg-music {width: 100%; height: 580px; background-position: center; background-image: url(../img/bgmusic.jpg); margin: 0; float: right;}
+    .pd-top { padding-top: 43vh; }
+    .list-footer {height: 67vh;}
+}
+@media only screen and (max-width: 670px) {
+    .menu { width: 80%; padding: 80px 40px;}
+    .pd-top { padding-top: 43vh; }
+    .list-footer { width: 50%; height: auto; margin-bottom: 5px; overflow: hidden;}
+}
+@media only screen and (max-width: 365px) {
+    .menu { width: 80%; padding: 80px 40px;}
+    .pd-top { padding-top: 40vh; }
+}
