@@ -24,7 +24,10 @@
     color: var(--font-white);
     border-bottom-color: var(--font-white);
 }
-/****** MENU ******/
+
+/****** 
+*******MENU 
+******/
 .header{
     height: 43px;
     background: var(--bg-nav);
@@ -52,12 +55,8 @@
     float: left;
     margin-top: -30px;
 }
-.show-menu-btn i{
-    line-height: 100px;
-}
-.menu a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{
-    color: var(--font-nav-hover);
-}
+.show-menu-btn i{ line-height: 100px; }
+.menu a:hover,.show-menu-btn:hover,.hide-menu-btn:hover{ color: var(--font-nav-hover); }
 #chk{
     position: absolute;
     visibility: hidden;
@@ -78,7 +77,10 @@ input[type=text]{
 }
 [logo-apple] { text-align: center; line-height: 40px; display: none; }
 [logo-loja] { text-align: right; margin-top: -30px; display: none; }
-/****** MAIN ******/
+
+/****** 
+*******MAIN 
+******/
 .headtext {
     font-size: 44px;
     line-height: 1.09091;
@@ -124,7 +126,10 @@ input[type=text]{
     padding-top:50px;
 }
 .pd-top { padding-top: 65vh; }
-/****** LOGO ******/
+
+/****** 
+*******LOGO 
+******/
 .logo-iphonexr {
     width: 180px;
     height: 29px;
@@ -164,7 +169,10 @@ input[type=text]{
     background-size: 120px 30px;
     background-image: url(../img/logomusic.png);
 }
-/****** IMAGENS ******/
+
+/****** 
+*******IMAGENS 
+******/
 .img-iphonexr {
     width: 573px;
     height: 337px;
@@ -188,7 +196,10 @@ input[type=text]{
     background-repeat: no-repeat;
     background-image: url(../img/bgipad.jpg);
 }
-/****** Backgrounds ******/
+
+/****** 
+*******BACKGROUNDS 
+******/
 .bg-tvplus {
     width: 900px;
     height: 500px;
@@ -242,7 +253,10 @@ input[type=text]{
     float: right;
     margin-bottom: 10px;
 }
-/****** FOOTER ******/
+
+/****** 
+*******FOOTER 
+******/
 [footer] {
     padding-right: 10%;
     padding-left: 10%;
@@ -271,7 +285,10 @@ input[type=text]{
 [bottom-footer] {
     float: left;
     padding-bottom: 20px;}
-/****** MEDIAS ******/
+
+/****** 
+*******MEDIAS 
+******/
 @media only screen and (max-width: 1125px) {
     .menu a{padding: 0px 28px;}
 }
