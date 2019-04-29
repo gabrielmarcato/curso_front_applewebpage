@@ -5,45 +5,120 @@
         <meta name="keywords" content="Apple, iPhone, iPad, Mac, Music">
         <meta name="description" content="Apple Storage">
         <meta name="author" content="Gabriel O Marcato">
-        <meta http-equiv="refresh" content="30">
+        <meta http-equiv="refresh" content="120">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Apple Store</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="header">
-            <input type="checkbox" id="chk">
-            <label for="chk" class="show-menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <div logo-apple>
-                <i class="fab fa-apple"></i>
-            </div>
-            <div logo-loja>
-                <i class="far fa-clipboard"></i>
-            </div>
-            <ul class="menu">
-                <a href="#"><i class="fab fa-apple"></i></a>
-                <input type="text" placeholder="Pesquisar">
-                <a class="underline" href="#">Mac</a>
-                <a class="underline" href="#">iPad</a>
-                <a class="underline" href="#">iPhone</a>
-                <a class="underline" href="#">Watch</a>
-                <a class="underline" href="#">TV</a>
-                <a class="underline" href="#">Music</a>
-                <a class="underline" href="#">Suporte</a>
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="far fa-clipboard"></i></a>
-                <label for="chk" class="hide-menu-btn">
-                    <i class="fas fa-times"></i>
-                </label>
-            </ul>
-        </div>
 
+        <header>
+            <nav>
+                <!--Responsive Menu-->
+                <div class="toggleNav">
+                    <div class="toggleNavButton"></div>
+                </div>
+                    
+                <div id="subnav">
+                    <div class="busca-responsive">
+                        <input type="text" placeholder="Buscar em Apple.com">
+                    </div>
+                    <ul>
+                        <li> <a href="#">Mac</a></li>
+                        <li> <a href="#">iPad</a></li>
+                        <li> <a href="#">iPhone</a></li>
+                        <li> <a href="#">Watch</a></li>
+                        <li> <a href="#">TV</a></li>
+                        <li> <a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-container">
+                <!-- Menu -->
+                <ul class="menu">
+                    <li class="menu-apple">
+                    <a href="#">
+                        <i class="fab fa-apple"></i>
+                    </a>
+                    </li>
+                    <li class="menu-mac">
+                    <a href="#">
+                        <span>Mac</span>
+                    </a>
+                    </li>
+                    <li class="menu-iPad">
+                    <a href="#">
+                        <span>iPad</span>
+                    </a>
+                    </li>
+                    <li class="menu-iPhone">
+                    <a href="#">
+                        <span>iPhone</span>
+                    </a>
+                    </li>
+                    <li class="menu-watch">
+                    <a href="#">
+                        <span>Watch</span>
+                    </a>
+                    </li>
+                    <li class="menu-tv">
+                    <a href="#">
+                        <span>TV</span>
+                    </a>
+                    </li>
+                    <li class="menu-support">
+                    <a href="#">
+                        <span>Suporte</span>
+                    </a>
+                    </li>
+                    <li class="menu-search">
+                    <a href="#">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                    <li class="menu-store">
+                    <a href="#">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                </ul>
+                
+                <!-- Search -->
+                <div class="menu-search-container">
+                    <div class="menu-search-input">
+                    <form action="">
+                    <a href="#">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    <input class="menu-search-input" type="text" aria-label="Search apple.com" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+                    </form>
+                    </div>
+                    <a class="menu-search-close" href="#">
+                        <i class="fas fa-times"></i>
+                    </a> 
+                    <div class="search-sub-menu">
+                    <h3>Mais procurados</h3>
+                    <ul>
+                    <li><a href="#">MacBook</a></li>
+                    <li><a href="#">Acessorios</a></li>
+                    <li><a href="#">iPod</a></li>
+                    <li><a href="#">iOS</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+                </div>
+            </nav>
+        </header>
+        <div class="fade-screen"></div>
         <main>
             <section class="head-iphonexr">
                 <div class="headtext">
@@ -180,7 +255,7 @@
                 </ul>
             </section>
             <hr>
-            <nav nav-footer>
+            <div nav-footer>
                 <div class="list-footer">
                     <ul>
                         <li>Descobrir e Comprar</li>
@@ -249,7 +324,7 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
-            </nav>
+            </div>
             <section bottom-footer>
                 <div>
                     Outras formas de comprar: Visite uma Apple Store, ligue para 0800-761-0867 ou encontre um revendedor autorizado. Apple Music e iTunes Store são fornecidos pela Apple Inc. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000. 
@@ -258,5 +333,9 @@
                 </div>
             </section>
         </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script  src="js/index.js"></script>
+
     </body>
 </html>
