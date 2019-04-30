@@ -1,4 +1,4 @@
-/* Função Busca */
+/* Menu Busca */
 (function() {
 
   'use strict';
